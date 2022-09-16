@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Acme;
+    src: url('./fonts/Acme-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    width: 95rem;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-main: url('./assets/secondxoxo.png');
+    --font-logo: Acme, sans-serif;
+    --navbar-background: rgb(40, 40, 40);
+    --navbar-boxshadow: 5px 5px 50px rgb(23, 15, 59);
+    --color-primary: #d3d3d3;
+    --color-secondary: rgb(31, 8, 163);
+}
+
+body {
+    background: var(--background-main) no-repeat;
+}
+
+#xoxo {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-logo);
+}
+
+#xoxo:hover {
+    text-shadow: 2px 0px 20px rgb(175, 122, 224);
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#user {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.profile:hover {
+    background: var(--color-secondary);
+    padding: .5vh 1.2vw;
+    border-radius: 10px;
+}
+
+#username {
+    color: var(--color-primary);
+    font-family: var(--font-logo);
+}
+
+@media screen and (max-width:1500px) {
+    html {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    body {
+        background: url('./assets/secondxoxo600.png');
+    }
+}

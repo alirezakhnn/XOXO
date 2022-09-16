@@ -1,0 +1,14 @@
+#signup {
+    background: var(--color-secondary);
+    padding: .9rem 1.5rem;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: var(--font-logo);
+    cursor: pointer;
+    border: none;
+}
+
+#signup:hover {
+    background: rgb(26, 6, 137);
+}
