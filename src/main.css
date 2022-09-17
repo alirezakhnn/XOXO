@@ -3,6 +3,21 @@
     src: url('./fonts/Acme-Regular.ttf');
 }
 
+/* @font-face {
+    font-family: fredoka;
+    src: url('./fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: caveat;
+    src: url('./fonts/Caveat-VariableFont_wght.ttf');
+} */
+
+@font-face {
+    font-family: russo;
+    src: url('./fonts/RussoOne-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +33,14 @@ html {
 :root {
     --background-main: url('./assets/secondxoxo.png');
     --font-logo: Acme, sans-serif;
+    /* --font-header: fredoka, sans-serif;
+    --font-header2: caveat, sans-serif; */
+    --font-header: russo, sans-serif;
     --navbar-background: rgb(40, 40, 40);
     --navbar-boxshadow: 5px 5px 50px rgb(23, 15, 59);
     --color-primary: #d3d3d3;
     --color-secondary: rgb(31, 8, 163);
+    --color-header-title: #7bbade;
     --navbar-transition: .3s ease-in-out;
 }
 

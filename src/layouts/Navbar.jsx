@@ -4,6 +4,7 @@ import { Input } from '../components';
 import { Link } from 'react-router-dom';
 import { profile_nina, menu, close } from '../assets';
 import Users from '../styles';
+import Texts from '../texts';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
             </div>
             <div className=" mobile-left-navbar left-navbar">
                 <div className="logo">
-                    <h1><Link id="xoxo" to="/">XOXO</Link></h1>
+                    <h1><Link id={Texts[0].id} to="/">{Texts[0].logo}</Link></h1>
                 </div>
                 <div className="profile">
                     <img id="user" src={profile_nina} alt="profile" />
@@ -29,7 +30,7 @@ const Navbar = () => {
             <section id="navbar">
                 <div className="left-navbar">
                     <div className="logo">
-                        <h1><Link id="xoxo" to="/">XOXO</Link></h1>
+                        <h1><Link id={Texts[0].id} to="/">{Texts[0].logo}</Link></h1>
                     </div>
                     <div className="profile">
                         <img id="user" src={profile_nina} alt="profile" />
@@ -38,13 +39,13 @@ const Navbar = () => {
                 </div>
                 <div className="right-navbar">
                     <ul className="right-navbar-list">
-                        <li><Link to="/your-panel" id="panel">Panel</Link></li>
-                        <li><Link to="/menu" id="menu">Menu</Link></li>
-                        <li><Link to="/about" id="about">About</Link></li>
+                        <li><Link to="/your-panel" id="panel">{Texts[0].navbar.first}</Link></li>
+                        <li><Link to="/menu" id="menu">{Texts[0].navbar.second}</Link></li>
+                        <li><Link to="/about" id="about">{Texts[0].navbar.third}</Link></li>
                     </ul>
                     <div className="sign">
-                        <h2 id="signin">signIn</h2>
-                        <Input id="signup" type="submit" value="signUp" />
+                        <h2 id="signin">{Texts[0].sign.in}</h2>
+                        <Input id="signup" type="submit" value={Texts[0].sign.up} />
                     </div>
                 </div>
             </section>
