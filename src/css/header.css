@@ -1,50 +1,97 @@
 #header {
     display: flex;
     justify-content: space-between;
+    transition: var(--navbar-transition);
 }
 
-#header .right-header {
+#header .left-header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-#header .right-header-title {
+#header .left-header-title {
     color: var(--color-header-title);
     font-family: var(--font-header);
-    font-size: 60px;
-    margin: 6vh 4rem .5rem 4rem;
+    font-size: 4rem;
+    margin: 2rem 1rem .5rem 4rem;
     text-shadow: 0 0 40px var(--color-secondary);
 }
 
-.right-header-context {
+.left-header-context {
     color: #fff;
     font-family: var(--font-logo);
     margin-left: 5.5rem;
-    font-size: 19px;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
     text-shadow: 0 0 100px var(--color-secondary);
 }
 
-#header .left-header {
+#header .right-header {
     display: grid;
     row-gap: 2.5rem;
-    margin: 3vh 4rem;
+    margin: 2rem 4rem 2rem 0;
 }
 
-.left-header-first-context,
-.left-header-second-context {
+.right-header-first-context,
+.right-header-second-context {
     color: var(--color-primary);
-    font-size: 17px;
-    line-height: 27px;
+    font-size: 1rem;
+    line-height: 2rem;
     font-family: var(--font-header);
     max-width: 400px;
+    min-width: fit-content;
+    max-height: 500px;
+    min-height: fit-content;
     padding: 1rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--color-secondary);
     cursor: pointer;
 }
 
-.left-header-first-context:hover,
-.left-header-second-context:hover {
+.right-header-first-context:hover,
+.right-header-second-context:hover {
     background: linear-gradient(220deg, rgba(16, 55, 175, .4) 0%, rgba(61, 19, 209, .3) 40%);
+}
+
+@media screen and (max-width:1500px) {
+    #header {
+        margin-left: 12rem;
+    }
+
+    #header .left-header-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:910px) {
+    #header {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
+
+    .right-header-first-context,
+    .right-header-second-context {
+        font-size: .9rem;
+        max-width: 500px;
+        max-height: 600px;
+    }
+
+    #header .left-header-title {
+        color: #fff;
+        text-shadow: 0 0 55px var(--color-secondary);
+    }
+}
+
+@media screen and (max-width:600px) {
+    #header {
+        margin-left: 2rem;
+    }
+
+    #header .right-header {
+        margin-left: 2rem;
+    }
 }
