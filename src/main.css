@@ -45,7 +45,7 @@ html {
 }
 
 body {
-    background: var(--background-main) no-repeat;
+    background: var(--background-main);
 }
 
 #xoxo {
@@ -88,6 +88,15 @@ body {
     font-family: var(--font-logo);
 }
 
+::-webkit-scrollbar {
+    background: var(--color-secondary);
+    width: .3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-header-title);
+}
+
 @media screen and (max-width:1500px) {
     html {
         width: 90%;
@@ -107,6 +116,13 @@ body {
     }
 
     .sign {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    html {
         display: grid;
         place-items: center;
     }

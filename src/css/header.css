@@ -14,7 +14,7 @@
     color: var(--color-header-title);
     font-family: var(--font-header);
     font-size: 4rem;
-    margin: 2rem 1rem .5rem 4rem;
+    margin: 2rem 2rem .5rem 4rem;
     text-shadow: 0 0 40px var(--color-secondary);
 }
 
@@ -87,11 +87,12 @@
 }
 
 @media screen and (max-width:600px) {
-    #header {
-        margin-left: 2rem;
+
+    #header .left-header-title {
+        margin: 4rem 5rem 1rem 2rem;
     }
 
-    #header .right-header {
-        margin-left: 2rem;
+    .left-header-context {
+        margin: 1rem 4rem 1rem 2rem;
     }
 }
