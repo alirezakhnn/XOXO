@@ -1,5 +1,6 @@
 
 import { Navbar, Header, Source, Intro } from './layouts';
+
 import './app.css';
 
 const App = () => {
@@ -12,5 +13,4 @@ const App = () => {
         </div>
     );
 }
-
 export default App

@@ -141,3 +141,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width:410px) {
+    .hamburger-menu {
+        right: -3rem;
+    }
+}
