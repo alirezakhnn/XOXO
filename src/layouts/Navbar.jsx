@@ -32,10 +32,12 @@ const Navbar = () => {
                     <div className="logo">
                         <h1><Link id={Texts[0].id} to="/">{Texts[0].logo}</Link></h1>
                     </div>
-                    <div className="profile">
-                        <img id="user" src={profile_nina} alt="profile" />
-                        <h3 id="username">Nina</h3>
-                    </div>
+                    <Link to="/your-panel" className="profile">
+                        <div className="profile">
+                            <img id="user" src={profile_nina} alt="profile" />
+                            <h3 id="username">Nina</h3>
+                        </div>
+                    </Link>
                 </div>
                 <div className="right-navbar">
                     <ul className="right-navbar-list">
@@ -44,8 +46,8 @@ const Navbar = () => {
                         <li><Link to="/about" id="about">{Texts[0].navbar.third}</Link></li>
                     </ul>
                     <div className="sign">
-                        <h2 id="signin">{Texts[0].sign.in}</h2>
-                        <Input id="signup" type="submit" value={Texts[0].sign.up} />
+                        <h2><Link to="/sign-in" id="signin">{Texts[0].sign.in}</Link></h2>
+                        <Link to="/sign-up">                        <Input id="signup" type="submit" value={Texts[0].sign.up} /></Link>
                     </div>
                 </div>
             </section>

@@ -76,6 +76,7 @@ body {
     gap: 1.3rem;
     cursor: pointer;
     transition: var(--navbar-transition);
+    text-decoration: none;
 }
 
 .profile:hover {
