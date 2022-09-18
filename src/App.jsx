@@ -1,5 +1,5 @@
 
-import { Navbar, Header, Source } from './layouts';
+import { Navbar, Header, Source, Intro } from './layouts';
 import './app.css';
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
             <Navbar />
             <Header />
             <Source />
+            <Intro />
         </div>
     );
 }
