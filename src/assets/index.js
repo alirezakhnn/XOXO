@@ -7,6 +7,8 @@ import menu from './menu.svg';
 import close from './close.svg';
 import xoxoIntro from './xoxo-intro.png';
 import chatboxIntro from './intro-chatbox.png';
+import Meteorite from './meteorite.png';
+import Atom from './atoms.jpg';
 
 export {
     frier,
@@ -17,5 +19,8 @@ export {
     menu,
     close,
     xoxoIntro,
-    chatboxIntro
+    chatboxIntro,
+    Meteorite,
+    Atom
+
 };

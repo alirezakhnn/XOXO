@@ -9,18 +9,25 @@
 
 .left-signin {
     display: grid;
-    margin: 0 2rem;
+    place-items: center;
+    margin: 0 4rem;
+    row-gap: 2rem;
 }
 
 .left-signin-title {
     font-family: var(--font-logo);
-    line-height: 4rem;
-    font-size: 2rem;
-    max-width: 400px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    max-width: 300px;
     color: var(--color-header-title);
     background: var(--header-gradient-background);
     padding: 2rem;
     border-radius: 10px;
+    text-align: center;
+}
+
+#meteorite {
+    width: 50%;
 }
 
 .right-signin {
@@ -97,6 +104,7 @@
     font-size: 1.1rem;
     transition: var(--navbar-transition);
     cursor: pointer;
+    border: none;
 }
 
 #submit-signin:hover {
@@ -114,6 +122,7 @@
     font-family: var(--font-logo);
     font-size: 1.1rem;
     transition: var(--navbar-transition);
+    border: none;
 }
 
 #signin-google:hover {
@@ -133,4 +142,39 @@
 
 #createAccount:hover {
     text-shadow: 1px 3px 30px var(--color-secondary);
+}
+
+@media screen and (max-width:1000px) {
+    .right-signin {
+        margin-right: 2rem;
+    }
+
+    #meteorite {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #SignIn {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    #meteorite {
+        display: none;
+    }
+
+    .left-signin-title {
+        display: none;
+    }
+
+    .right-signin {
+        justify-self: center;
+        margin: 0 2rem;
+        row-gap: 5rem;
+    }
+
+    #profile_nina {
+        color: #fff;
+    }
 }

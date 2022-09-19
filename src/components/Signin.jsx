@@ -1,6 +1,6 @@
 import '../css/signin.css';
 import Input from './Input';
-import { profile_nina } from '../assets';
+import { profile_nina, Meteorite } from '../assets';
 import Users from '../styles';
 import Texts from '../texts';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 const Signin = () => (
     <section id="SignIn">
         <div className="left-signin">
+            <img id="meteorite" src={Meteorite} alt="meteorite" />
             <h3 className="left-signin-title">
                 Welcome back to xoxo<br /> We missed you so much<br />Enjoy new features
             </h3>
