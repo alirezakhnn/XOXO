@@ -47,7 +47,7 @@ const Navbar = () => {
                     </ul>
                     <div className="sign">
                         <h2><Link to="/sign-in" id="signin">{Texts[0].sign.in}</Link></h2>
-                        <Link to="/sign-up">                        <Input id="signup" type="submit" value={Texts[0].sign.up} /></Link>
+                        <Link to="/sign-up"><Input id="signup" type="submit" value={Texts[0].sign.up} /></Link>
                     </div>
                 </div>
             </section>

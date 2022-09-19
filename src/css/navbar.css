@@ -146,4 +146,8 @@
     .hamburger-menu {
         right: -3rem;
     }
+
+    #navbar {
+        right: -5rem;
+    }
 }

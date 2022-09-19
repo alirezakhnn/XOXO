@@ -45,6 +45,9 @@ const Texts = [
                 },
                 content:'Explore New design Chatbox'
             }
+        },
+        signin: {
+            signupLink:'Create an Account'
         }
     }
 ];

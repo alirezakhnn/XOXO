@@ -1,6 +1,136 @@
 #SignIn {
     color: #fff;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    translate: 0 20rem;
+    width: 100%;
+    height: 40rem;
+}
+
+.left-signin {
+    display: grid;
+    margin: 0 2rem;
+}
+
+.left-signin-title {
+    font-family: var(--font-logo);
+    line-height: 4rem;
+    font-size: 2rem;
+    max-width: 400px;
+    color: var(--color-header-title);
+    background: var(--header-gradient-background);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.right-signin {
+    justify-self: end;
+    margin-right: 10rem;
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.right-signin form {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.above-signin {
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--navbar-transition);
+}
+
+.above-signin:hover {
+    scale: 1.2;
+}
+
+#email,
+#password {
+    padding: .7rem 2rem;
+    outline: none;
+    border: none;
+    font-family: var(--font-logo);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: #2525b0;
+    color: #fff;
+    transition: var(--navbar-transition);
+}
+
+#email::placeholder,
+#password::placeholder {
+    color: #A7C2D4;
+}
+
+#email:focus,
+#password:focus {
+    box-shadow: 0 0 10px var(--color-header-title);
+}
+
+#signin-user {
+    width: 20%;
+    border-radius: 50%;
+}
+
+#profile_nina {
+    font-family: var(--font-logo);
+    color: #A7C2D4;
+    text-shadow: 0 0 30px var(--color-secondary);
+    justify-self: center;
+}
+
+#submit-signin {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1rem 1.5rem;
+    font-family: var(--font-logo);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: var(--navbar-transition);
+    cursor: pointer;
+}
+
+#submit-signin:hover {
+    background: rgb(26, 6, 137);
+}
+
+#signin-google {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+    background: var(--navbar-background);
+    color: var(--color-primary);
+    font-family: var(--font-logo);
+    font-size: 1.1rem;
+    transition: var(--navbar-transition);
+}
+
+#signin-google:hover {
+    background: #2d2d2d;
+}
+
+#signin-google svg {
+    color: var(--color-header-title);
+}
+
+#createAccount {
+    text-decoration: none;
+    color: var(--color-header-title);
+    font-family: var(--font-logo);
+    transition: var(--navbar-transition);
+}
+
+#createAccount:hover {
+    text-shadow: 1px 3px 30px var(--color-secondary);
 }

@@ -32,6 +32,7 @@ html {
 
 :root {
     --background-main: url('./assets/secondxoxo.png');
+    --background-main-mobile: url('./assets/secondxoxo600.png');
     --font-logo: Acme, sans-serif;
     /* --font-header: fredoka, sans-serif;
     --font-header2: caveat, sans-serif; */
@@ -106,7 +107,7 @@ body {
 
 @media screen and (max-width:1100px) {
     body {
-        background: url('./assets/secondxoxo600.png');
+        background: var(--background-main-mobile);
     }
 }
 
