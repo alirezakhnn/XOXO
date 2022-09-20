@@ -28,13 +28,14 @@ html {
     overflow-x: hidden;
     width: 93rem;
     scroll-behavior: smooth;
+    display: grid;
 }
 
 :root {
     --background-main: url('./assets/secondxoxo.png');
     --background-main-mobile: url('./assets/secondxoxo600.png');
     --font-logo: Acme, sans-serif;
-    /* --font-header: fredoka, sans-serif;
+    /* --font-header1: fredoka, sans-serif;
     --font-header2: caveat, sans-serif; */
     --font-header: russo, sans-serif;
     --navbar-background: rgb(40, 40, 40);
@@ -47,7 +48,7 @@ html {
 }
 
 body {
-    background: var(--background-main);
+    background: var(--background-main) repeat-y;
 }
 
 #xoxo {
