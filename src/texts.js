@@ -49,9 +49,15 @@ const Texts = [
         signin: {
             signupLink:'Create an Account'
         },
+        sign_google : {
+            signin:'sign in by google',
+            signup:'sign up by google'
+        },
         privacy: {
             context_first:'The short story is a crafted form in its own right. Short stories make use of plot, resonance, and other dynamic components as in a novel, but typically to a lesser degree.',
-            context_second:' The short story is a crafted form in its own right. Short stories make use of plot, resonance, and other dynamic components as in a novel, but typically to a lesser degree. While the short story is largely distinct from the novel or novella/short novel, authors generally draw from a common pool of literary techniques.[citation needed] The short story is sometimes referred to as a genre.[1]Determining what exactly defines a short story has been recurrently problematic.[2] A classic definition of a short story is that one should be able to read it in one sitting, a point most notably made in Edgar Allan Poes essay "The Philosophy of Composition" (1846).[3] H.G. Wells described the purpose of the short story as "The jolly art, of making something very bright and moving; it may be horrible or pathetic or funny or profoundly illuminating, having only this essential, that it should take from fifteen to fifty minutes to read aloud.”'
+            context_second:' The short story is a crafted form in its own right. Short stories make use of plot, resonance, and other dynamic components as in a novel, but typically to a lesser degree. While the short story is largely distinct from the novel or novella/short novel, authors generally draw from a common pool of literary techniques.[citation needed] The short story is sometimes referred to as a genre.[1]Determining what exactly defines a short story has been recurrently problematic.[2] A classic definition of a short story is that one should be able to read it in one sitting, a point most notably made in Edgar Allan Poes essay "The Philosophy of Composition" (1846).[3] H.G. Wells described the purpose of the short story as "The jolly art, of making something very bright and moving; it may be horrible or pathetic or funny or profoundly illuminating, having only this essential, that it should take from fifteen to fifty minutes to read aloud.”',
+            chechbox_1:'agree with policy and privacy',
+            checkbox_2:'receive our services of xoxo features'
         }
     }
 ];

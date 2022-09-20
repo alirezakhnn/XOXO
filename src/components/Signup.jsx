@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 import '../css/signup.css';
 import Input from './Input';
-import { Sign_btn } from './Signin';
+import { Sign_btn, Form, Switcher_sign_in_up } from './Signin';
 import Texts from '../texts';
 
 const Signup = () => (
@@ -9,6 +9,10 @@ const Signup = () => (
         <div className="left-content-signup">
             <Privacy />
             <CheckBox />
+        </div>
+        <div className="right-content-signup">
+            <Wave_1 />
+            <Switcher_sign_in_up className="switcher" to="/sign-in" context="already have an account" />
         </div>
     </section>
 );
@@ -47,14 +51,20 @@ export const CheckBox = () => (
     <Fragment>
         <div id="checkbox">
             <Input id="agree-signup" type="checkbox" />
-            <span className="span-origin">agree with policy and privacy</span>
+            <span className="span-origin">{Texts[0].privacy.chechbox_1}</span>
         </div>
         <div id="checkbox">
             <Input id="agree-signup" type="checkbox" />
-            <span className="span-origin">receive our services of xoxo features</span>
+            <span className="span-origin">{Texts[0].privacy.checkbox_2}</span>
         </div>
-        <Sign_btn />
+        <Sign_btn value="sign up" />
     </Fragment>
+);
+
+export const Wave_1 = () => (
+    <div id="wave1">
+        <Form google={Texts[0].sign_google.signup} repeat={<Input id="password" type="password" placeholder="repeat password" />} />
+    </div>
 );
 
 export default Signup
