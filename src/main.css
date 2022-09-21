@@ -26,9 +26,9 @@
 
 html {
     overflow-x: hidden;
-    width: 93rem;
     scroll-behavior: smooth;
     display: grid;
+    width: 100vw;
 }
 
 :root {
@@ -44,11 +44,19 @@ html {
     --color-primary: #d3d3d3;
     --color-secondary: rgb(31, 8, 163);
     --color-header-title: #7bbade;
+    --signin-context: #A7C2D4;
     --navbar-transition: .3s ease-in-out;
 }
 
 body {
-    background: var(--background-main) repeat-y;
+    background: var(--background-main) repeat-y fixed center;
+    display: grid;
+    place-items: center;
+}
+
+#root {
+    width: 60rem;
+    justify-self: center;
 }
 
 #xoxo {
@@ -76,7 +84,7 @@ body {
 .profile {
     display: flex;
     align-items: center;
-    gap: 1.3rem;
+    gap: .8rem;
     cursor: pointer;
     transition: var(--navbar-transition);
     text-decoration: none;

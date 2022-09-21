@@ -2,7 +2,7 @@ import { useState, Fragment } from 'react';
 import '../css/navbar.css';
 import { Input } from '../components';
 import { Link } from 'react-router-dom';
-import { profile_nina, menu, close } from '../assets';
+import { menu, close } from '../assets';
 import Users from '../styles';
 import Texts from '../texts';
 
@@ -23,7 +23,7 @@ const Navbar = () => {
                     <h1><Link id={Texts[0].id} to="/">{Texts[0].logo}</Link></h1>
                 </div>
                 <div className="profile">
-                    <img id="user" src={profile_nina} alt="profile" />
+                    <img id="user" src={Users[2].img} alt="profile" />
                     <h3 id="username">{Users[2].username}</h3>
                 </div>
             </div>
@@ -34,8 +34,8 @@ const Navbar = () => {
                     </div>
                     <Link to="/your-panel" className="profile">
                         <div className="profile">
-                            <img id="user" src={profile_nina} alt="profile" />
-                            <h3 id="username">Nina</h3>
+                            <img id="user" src={Users[2].img} alt={Users[2].id} />
+                            <h3 id="username">{Users[2].username}</h3>
                         </div>
                     </Link>
                 </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     <ul className="right-navbar-list">
                         <li><Link to="/your-panel" id="panel">{Texts[0].navbar.first}</Link></li>
                         <li><Link to="/menu" id="menu">{Texts[0].navbar.second}</Link></li>
-                        <li><Link to="/about" id="about">{Texts[0].navbar.third}</Link></li>
+                        <li><Link to="/setting" id="setting">{Texts[0].navbar.third}</Link></li>
                     </ul>
                     <div className="sign">
                         <h2><Link to="/sign-in" id="signin">{Texts[0].sign.in}</Link></h2>

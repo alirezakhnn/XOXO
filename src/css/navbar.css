@@ -25,7 +25,7 @@
 }
 
 #panel,
-#about,
+#setting,
 #menu {
     color: var(--color-primary);
     text-decoration: none;
@@ -33,7 +33,7 @@
 }
 
 #panel:hover,
-#about:hover,
+#setting:hover,
 #menu:hover {
     color: #b9b7b7;
 }
@@ -132,9 +132,43 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    .hamburger-menu {
+        right: -2rem;
+    }
+
+    #navbar {
+        right: -4rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .hamburger-menu {
+        right: -8rem;
+    }
+
+    #navbar {
+        right: -8rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .hamburger-menu {
+        right: -15rem;
+    }
+
+    #navbar {
+        right: -15rem;
+    }
+}
+
 @media screen and (max-width:600px) {
     .hamburger-menu {
-        right: 2rem;
+        right: -20rem;
+    }
+
+    #navbar {
+        right: -19rem;
     }
 
     .mobile-left-navbar .profile {
@@ -142,12 +176,22 @@
     }
 }
 
-@media screen and (max-width:410px) {
+@media screen and (max-width:500px) {
     .hamburger-menu {
-        right: -3rem;
+        right: -25rem;
     }
 
     #navbar {
-        right: -5rem;
+        right: -25rem;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .hamburger-menu {
+        right: -30rem;
+    }
+
+    #navbar {
+        right: -30rem;
     }
 }

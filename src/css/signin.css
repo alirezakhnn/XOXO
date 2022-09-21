@@ -90,8 +90,8 @@
 
 #profile_nina {
     font-family: var(--font-logo);
-    color: #A7C2D4;
-    text-shadow: 0 0 30px var(--color-secondary);
+    color: #fff;
+    text-shadow: 0 0 50px var(--color-secondary);
     justify-self: center;
 }
 
