@@ -67,6 +67,13 @@
 .center-panel-img {
     cursor: pointer;
     transition: var(--navbar-transition);
+    width: 20%;
+    border-radius: 50%;
+    transition: var(--navbar-transition);
+}
+
+.cneter-panel-img:hover {
+    scale: 1.1;
 }
 
 .center-panel-img:hover {
@@ -88,6 +95,18 @@
 #settings:hover {
     scale: 1.1;
     background: rgb(26, 6, 137);
+}
+
+.email-panel,
+.password-panel {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: .7rem 2rem;
+    background: var(--color-secondary);
+    font-family: var(--font-logo);
+    font-size: 1.3rem;
 }
 
 .center-panel-buttons {
@@ -122,7 +141,7 @@
     justify-content: end;
 }
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:900px) {
     #Panel {
         margin-left: 2rem;
     }
@@ -132,7 +151,23 @@
     }
 
     .center-panel {
+        width: 70%;
         margin-left: 10rem;
+    }
+
+    .center-panel-section1 label,
+    .center-panel-section2 label,
+    .center-panel-section3 label {
+        font-size: 2rem;
+    }
+
+    .email-panel,
+    .password-panel {
+        font-size: 2rem;
+    }
+
+    #delete {
+        font-size: 2rem;
     }
 }
 
@@ -159,6 +194,22 @@
 
 @media screen and (max-width:560px) {
     .center-panel {
+        width: 90%;
         margin: 0 2rem;
+    }
+
+    .center-panel-section1 label,
+    .center-panel-section2 label,
+    .center-panel-section3 label {
+        font-size: 3rem;
+    }
+
+    .email-panel,
+    .password-panel {
+        font-size: 2.5rem;
+    }
+
+    #delete {
+        font-size: 2.5rem;
     }
 }

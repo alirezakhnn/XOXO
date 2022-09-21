@@ -5,8 +5,8 @@ const Source = () => (
         <div className="source-left">
             <div className="introduction">
                 <fieldset className="introduction-fieldset">
-                    <legend>{Texts[0].source.legend}</legend>
-                    <h4>{Texts[0].source.field}</h4>
+                    <legend id="intro-legend">{Texts[0].source.legend}</legend>
+                    <h4 id="introduction">{Texts[0].source.field}</h4>
                 </fieldset>
             </div>
         </div>

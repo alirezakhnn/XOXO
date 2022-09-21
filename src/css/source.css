@@ -70,6 +70,25 @@
         place-items: center;
         margin: 1rem 2rem;
     }
+
+    #introduction {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #intro-legend {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    #telegram,
+    #github,
+    #instagram {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 @media screen and (max-width:400px) {

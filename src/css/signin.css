@@ -154,6 +154,34 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    #signin-user {
+        width: 90%;
+    }
+
+    #profile_nina {
+        font-size: 5rem;
+    }
+
+    #email,
+    #password {
+        font-size: 3rem;
+    }
+
+    #signin-google {
+        font-size: 3rem;
+        padding: 2rem 2.5rem;
+    }
+
+    #submit-signin {
+        font-size: 4rem;
+    }
+
+    #createAccount {
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width:750px) {
     #SignIn {
         grid-template-columns: 1fr;

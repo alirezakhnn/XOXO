@@ -92,6 +92,9 @@
         position: absolute;
         right: 5rem;
         top: 2.5rem;
+        right: -2rem;
+
+
     }
 
     #navbar {
@@ -103,8 +106,24 @@
         grid-template-rows: 1fr;
         place-items: center;
         background: var(--navbar-background);
-        width: 12rem;
+        width: 15rem;
         row-gap: 2rem;
+
+    }
+
+    #panel,
+    #setting,
+    #menu {
+        font-size: 2rem;
+    }
+
+    #hamburger {
+        width: 3.5rem;
+    }
+
+    #signin,
+    #signup {
+        font-size: 2rem;
     }
 
     .right-navbar {
@@ -132,22 +151,14 @@
     }
 }
 
-@media screen and (max-width:900px) {
-    .hamburger-menu {
-        right: -2rem;
-    }
-
-    #navbar {
-        right: -4rem;
-    }
-}
-
 @media screen and (max-width:800px) {
     .hamburger-menu {
         right: -8rem;
     }
 
     #navbar {
+        width: 15rem;
+        top: 6rem;
         right: -8rem;
     }
 }

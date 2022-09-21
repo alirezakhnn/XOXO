@@ -83,6 +83,18 @@
     #header .left-header-title {
         color: #fff;
         text-shadow: 0 0 55px var(--color-secondary);
+        font-size: 6rem;
+        margin: 4rem;
+    }
+
+    .left-header-context {
+        font-size: 3rem;
+    }
+
+    .right-header-first-context,
+    .right-header-second-context {
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 }
 

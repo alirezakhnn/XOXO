@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <Fragment>
             <div className="hamburger-menu">
-                <img src={toggle ? close : menu} alt="hamburger"
+                <img id="hamburger" src={toggle ? close : menu} alt="hamburger"
                     onClick={() => {
                         setToggle(prev => !prev);
                         document.body.classList.toggle('mobile-navbar-appear');

@@ -18,18 +18,18 @@ const Panel = () => {
             </div>
             <div className="center-panel">
                 <div className="center-panel-content">
-                    <img className="center-panel-img" id="signin-user" src={Users[2].img} alt="user-profile" />
+                    <img className="center-panel-img" src={Users[2].img} alt="user-profile" />
                     <div className="center-panel-section1">
-                        <label htmlFor="">{Texts[0].panel_label.section1}</label>
-                        <Input type="text" id="email" value="Nina" readOnly />
+                        <label className="panel-label" htmlFor="">{Texts[0].panel_label.section1}</label>
+                        <Input className="email-panel" type="text" value="Nina" readOnly />
                     </div>
                     <div className="center-panel-section2">
-                        <label htmlFor="">{Texts[0].panel_label.section2}</label>
-                        <Input type="text" id="password" value="****" readOnly />
+                        <label className="panel-label" htmlFor="">{Texts[0].panel_label.section2}</label>
+                        <Input className="password-panel" type="text" value="****" readOnly />
                     </div>
                     <div className="center-panel-section3">
-                        <label htmlFor="">{Texts[0].panel_label.section3}</label>
-                        <Input type="text" id="email" value="Nina28@gmail.com" readOnly />
+                        <label className="panel-label" htmlFor="">{Texts[0].panel_label.section3}</label>
+                        <Input className="email-panel" type="text" value="Nina28@gmail.com" readOnly />
                     </div>
                 </div>
             </div>
