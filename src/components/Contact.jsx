@@ -7,7 +7,7 @@ const Contacts = () => {
         <div id="contacts">
             <div className="left-contacts">
                 <div className="left-contacts-content">
-                    <Link to="/your-panel" className="above-signin">
+                    <Link to="/your-panel" className="left-contacts-content-you">
                         <img id="contacts-user" src={Users[2].img} alt="user-profile" />
                         <h1 id="contacts-user-h1">{Users[2].username}</h1>
                     </Link>
@@ -16,13 +16,13 @@ const Contacts = () => {
             <div className="center-contacts">
                 <div className="center-contacts-content">
                     {Users.map(user => (
-                        <div className="center-contacts-users">
+                        <Link to={user.id} className="center-contacts-users">
                             <div className="user-contact">
                                 <img id={user.id} src={user.img} alt={user.id} />
                                 <h5 className="user-contact-username">{user.username}</h5>
                             </div>
                             <p className="user-subtext">{user.subtext}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

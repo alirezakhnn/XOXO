@@ -1,11 +1,25 @@
 #contacts {
     display: grid;
+    grid-template-columns: 200px 1fr 50px;
 }
 
 .left-contacts-content {
-    position: absolute;
-    left: 4rem;
-    top: 2rem;
+    display: grid;
+    place-items: start;
+    margin: 2rem;
+}
+
+.left-contacts-content-you {
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--navbar-transition);
+}
+
+.left-contacts-content-you:hover {
+    scale: 1.1;
 }
 
 #contacts-user {
@@ -25,7 +39,7 @@
     background: var(--header-gradient-background);
     border-radius: 10px;
     row-gap: .2rem;
-    margin: 2rem 0;
+    margin: 2rem;
 }
 
 .center-contacts-users {
@@ -33,6 +47,7 @@
     margin-left: 2rem;
     padding: 2rem;
     border-bottom: 1px solid var(--color-secondary);
+    text-decoration: none;
 }
 
 .user-contact {
@@ -92,4 +107,71 @@
 #add-contact:hover {
     scale: 1.1;
     background: var(--header-gradient-background);
+}
+
+@media screen and (max-width:1050px) {
+    #contacts {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #contacts-user {
+        width: 9rem;
+    }
+
+    .user-contact-username {
+        font-size: 1.8rem;
+    }
+
+    .user-subtext {
+        font-size: 1.6rem;
+    }
+
+    #add-contact {
+        width: 65px;
+        height: 65px;
+    }
+
+    #frier,
+    #john,
+    #profile_nina,
+    #lagertha,
+    #robert {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #contacts-user {
+        width: 15rem;
+    }
+
+    #contacts-user-h1 {
+        font-size: 4.5rem;
+    }
+
+    .user-contact-username {
+        font-size: 3rem;
+    }
+
+    .user-subtext {
+        font-size: 2rem;
+    }
+
+    #add-contact {
+        width: 75px;
+        height: 75px;
+    }
+
+    #frier,
+    #john,
+    #profile_nina,
+    #lagertha,
+    #robert {
+        width: 9rem;
+        height: 9rem;
+    }
 }

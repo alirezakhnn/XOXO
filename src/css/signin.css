@@ -93,6 +93,7 @@
     color: #fff;
     text-shadow: 0 0 50px var(--color-secondary);
     justify-self: center;
+    translate: 15px 0;
 }
 
 #submit-signin {
@@ -155,6 +156,11 @@
 }
 
 @media screen and (max-width:900px) {
+    #SignIn {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
     #signin-user {
         width: 90%;
     }
@@ -180,13 +186,6 @@
     #createAccount {
         font-size: 3rem;
     }
-}
-
-@media screen and (max-width:750px) {
-    #SignIn {
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
 
     #meteorite {
         display: none;
@@ -204,5 +203,6 @@
 
     #profile_nina {
         color: #fff;
+        translate: 0 0;
     }
 }
