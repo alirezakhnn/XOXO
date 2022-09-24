@@ -15,7 +15,7 @@ const Signin = () => (
         </div>
         <div className="right-signin">
             <Link to="/your-panel" className="above-signin">
-                <img id="signin-user" src={profile_nina} alt="user-profile" />
+                <img id="signin-user" src={Users[2].img} alt="user-profile" />
                 <h1 id={Users[2].id}>{Users[2].username}</h1>
             </Link>
             <Form google={Texts[0].sign_google.signin} />

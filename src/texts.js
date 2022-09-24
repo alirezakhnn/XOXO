@@ -6,7 +6,7 @@ const Texts = [
         id:'xoxo',
         navbar: {
             first:'Panel',
-            second:'Menu',
+            second:'Contacts',
             third:'Setting'
         },
         header: {

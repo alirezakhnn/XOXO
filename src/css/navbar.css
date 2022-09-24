@@ -26,7 +26,7 @@
 
 #panel,
 #setting,
-#menu {
+#Contacts {
     color: var(--color-primary);
     text-decoration: none;
     font-family: var(--font-logo);
@@ -34,7 +34,7 @@
 
 #panel:hover,
 #setting:hover,
-#menu:hover {
+#Contacts:hover {
     color: #b9b7b7;
 }
 

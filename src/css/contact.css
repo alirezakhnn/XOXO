@@ -1,0 +1,95 @@
+#contacts {
+    display: grid;
+}
+
+.left-contacts-content {
+    position: absolute;
+    left: 4rem;
+    top: 2rem;
+}
+
+#contacts-user {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+#contacts-user-h1 {
+    font-size: 2rem;
+    font-family: var(--font-logo);
+    color: var(--signin-context);
+}
+
+.center-contacts-content {
+    display: grid;
+    place-items: start;
+    background: var(--header-gradient-background);
+    border-radius: 10px;
+    row-gap: .2rem;
+    margin: 2rem 0;
+}
+
+.center-contacts-users {
+    width: 90%;
+    margin-left: 2rem;
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.user-contact {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem;
+    cursor: pointer;
+    transition: var(--navbar-transition);
+}
+
+.user-contact:hover {
+    scale: 1.1;
+}
+
+#frier,
+#john,
+#profile_nina,
+#lagertha,
+#robert {
+    width: 5rem;
+    height: 5rem;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.user-contact-username {
+    font-family: var(--font-logo);
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+
+.user-subtext {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: var(--color-primary);
+    margin: 0 2rem;
+}
+
+.right-contacts-content {
+    display: grid;
+    place-items: end;
+    position: fixed;
+    bottom: 4rem;
+    right: 5rem;
+}
+
+#add-contact {
+    color: var(--color-primary);
+    padding: .5rem;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    transition: var(--navbar-transition);
+    cursor: pointer;
+}
+
+#add-contact:hover {
+    scale: 1.1;
+    background: var(--header-gradient-background);
+}

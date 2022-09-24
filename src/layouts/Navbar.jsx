@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div className="right-navbar">
                     <ul className="right-navbar-list">
                         <li><Link to="/your-panel" id="panel">{Texts[0].navbar.first}</Link></li>
-                        <li><Link to="/menu" id="menu">{Texts[0].navbar.second}</Link></li>
+                        <li><Link to="/contacts" id="Contacts">{Texts[0].navbar.second}</Link></li>
                         <li><Link to="/setting" id="setting">{Texts[0].navbar.third}</Link></li>
                     </ul>
                     <div className="sign">
