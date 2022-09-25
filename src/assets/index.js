@@ -9,6 +9,8 @@ import xoxoIntro from './xoxo-intro.png';
 import chatboxIntro from './intro-chatbox.png';
 import Meteorite from './meteorite.png';
 import Atom from './atoms.jpg';
+import SimpleLife from './simpleLife300x300.jpg';
+import SadGirl from './sadgirl.jpg';
 
 export {
     frier,
@@ -21,6 +23,8 @@ export {
     xoxoIntro,
     chatboxIntro,
     Meteorite,
-    Atom
+    Atom,
+    SimpleLife,
+    SadGirl
 
 };

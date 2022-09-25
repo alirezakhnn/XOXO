@@ -93,7 +93,6 @@
     color: #fff;
     text-shadow: 0 0 50px var(--color-secondary);
     justify-self: center;
-    translate: 15px 0;
 }
 
 #submit-signin {
@@ -203,6 +202,5 @@
 
     #profile_nina {
         color: #fff;
-        translate: 0 0;
     }
 }

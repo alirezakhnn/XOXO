@@ -1,8 +1,8 @@
     import { 
-    frier,
+    SimpleLife,
     john,
     profile_nina,
-    lagertha,
+    SadGirl,
     robert,
 } from './assets';
 
@@ -11,7 +11,7 @@ const Users = [
     {
         id:'frier',
         username:'Frier',
-        img:frier,
+        img:SimpleLife,
         subtext:"hello alireza i'm frier, I just wanted to say i wanna go to brazil, so goodbye"
     },
     {
@@ -21,15 +21,9 @@ const Users = [
         subtext:"hey alireza, here's some information about React..."
     },
     {
-        id:'profile_nina',
-        username:'Nina',
-        img:profile_nina,
-        subtext:"hey, nina back again to bother u :), call me if you have time"
-    },
-    {
         id:'lagertha',
         username:'Lagertha',
-        img:lagertha,
+        img:SadGirl,
         subtext:"hey lagertha is here to tell you i've just got a new job..."
     },
     {
@@ -39,5 +33,11 @@ const Users = [
         subtext:"hey alz, there is a problem here, i need your help; call me as soon as u can..."
     }
 ];
+
+export const Me = {
+    id:'profile_nina',
+    username:'Nina',
+    img:profile_nina,
+}
 
 export default Users

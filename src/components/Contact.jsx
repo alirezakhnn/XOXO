@@ -1,6 +1,6 @@
 import '../css/contact.css';
 import { Link } from 'react-router-dom';
-import Users from '../styles';
+import Users, { Me } from '../styles';
 
 const Contacts = () => {
     return (
@@ -8,8 +8,8 @@ const Contacts = () => {
             <div className="left-contacts">
                 <div className="left-contacts-content">
                     <Link to="/your-panel" className="left-contacts-content-you">
-                        <img id="contacts-user" src={Users[2].img} alt="user-profile" />
-                        <h1 id="contacts-user-h1">{Users[2].username}</h1>
+                        <img id="contacts-user" src={Me.img} alt="user-profile" />
+                        <h1 id="contacts-user-h1">{Me.username}</h1>
                     </Link>
                 </div>
             </div>

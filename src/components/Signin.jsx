@@ -1,7 +1,7 @@
 import '../css/signin.css';
 import Input from './Input';
-import { profile_nina, Meteorite } from '../assets';
-import Users from '../styles';
+import { Meteorite } from '../assets';
+import { Me } from '../styles';
 import Texts from '../texts';
 import { Link } from 'react-router-dom';
 
@@ -15,8 +15,8 @@ const Signin = () => (
         </div>
         <div className="right-signin">
             <Link to="/your-panel" className="above-signin">
-                <img id="signin-user" src={Users[2].img} alt="user-profile" />
-                <h1 id={Users[2].id}>{Users[2].username}</h1>
+                <img id="signin-user" src={Me.img} alt="user-profile" />
+                <h1 id={Me.id}>{Me.username}</h1>
             </Link>
             <Form google={Texts[0].sign_google.signin} />
             <Sign_btn value="sign in" />

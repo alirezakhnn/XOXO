@@ -3,7 +3,7 @@ import '../css/navbar.css';
 import { Input } from '../components';
 import { Link } from 'react-router-dom';
 import { menu, close } from '../assets';
-import Users from '../styles';
+import { Me } from '../styles';
 import Texts from '../texts';
 
 const Navbar = () => {
@@ -23,8 +23,8 @@ const Navbar = () => {
                     <h1><Link id={Texts[0].id} to="/">{Texts[0].logo}</Link></h1>
                 </div>
                 <div className="profile">
-                    <img id="user" src={Users[2].img} alt="profile" />
-                    <h3 id="username">{Users[2].username}</h3>
+                    <img id="user" src={Me.img} alt="profile" />
+                    <h3 id="username">{Me.username}</h3>
                 </div>
             </div>
             <section id="navbar">
@@ -34,8 +34,8 @@ const Navbar = () => {
                     </div>
                     <Link to="/your-panel" className="profile">
                         <div className="profile">
-                            <img id="user" src={Users[2].img} alt={Users[2].id} />
-                            <h3 id="username">{Users[2].username}</h3>
+                            <img id="user" src={Me.img} alt={Me.id} />
+                            <h3 id="username">{Me.username}</h3>
                         </div>
                     </Link>
                 </div>
