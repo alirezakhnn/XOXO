@@ -31,9 +31,16 @@
 }
 
 #chatbox-intro {
-    width: 40rem;
+    width: 30rem;
     margin: -2rem 2rem 1rem 0;
-    opacity: .9;
+    opacity: .8;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color-secondary);
+    transition: var(--navbar-transition);
+}
+
+#chatbox-intro:hover {
+    scale: 1.1;
 }
 
 .right-intro .right-content {
@@ -45,7 +52,7 @@
     color: var(--color-primary);
     font-family: var(--font-logo);
     font-size: 2.5rem;
-    text-shadow: 0 0 20px var(--color-header-title);
+    text-shadow: 0 0 60px var(--color-secondary);
 }
 
 @media screen and (max-width:1500px) {

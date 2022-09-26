@@ -1,0 +1,32 @@
+#brand {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 100%;
+    margin: 4vh 2rem;
+}
+
+.brand-right-content {
+    display: grid;
+    place-items: center;
+}
+
+.brand-right-content-context {
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    color: var(--color-header-title);
+    text-shadow: 0 0 40px var(--color-secondary);
+}
+
+.brand-right-content-subcontext {
+    margin: 2vh 0;
+    font-family: var(--font-header);
+    font-size: 1rem;
+    line-height: 2rem;
+    word-spacing: .1rem;
+    color: var(--color-header-title);
+    padding: 1.1rem;
+    background: var(--header-gradient-background);
+    border-radius: 10px;
+    max-width: 500px;
+}

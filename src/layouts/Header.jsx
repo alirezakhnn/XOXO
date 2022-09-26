@@ -1,11 +1,10 @@
 import '../css/header.css';
 import Texts from '../texts';
+
 const Header = () => (
     <header id='header'>
         <div className="left-header">
-            <h2 className="left-header-title">
-                A Chatbox <br /> for instant <br /> messages <br /> or something <br /> like that
-            </h2>
+            <h2 className="left-header-title">A Chatbox <br /> for instant <br /> messages <br /> or something <br /> like that</h2>
             <p className="left-header-context">{Texts[0].header.right.context}</p>
         </div>
         <div className="right-header">

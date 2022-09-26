@@ -1,4 +1,5 @@
-import {xoxoIntro, chatboxIntro} from './assets';
+import {xoxoIntro} from './assets';
+import {Tv} from './videos';
 
 const Texts = [
     {
@@ -41,7 +42,7 @@ const Texts = [
             right: {
                 img : {
                     id:'chatbox-intro',
-                    src:chatboxIntro
+                    src:Tv
                 },
                 content:'Explore New design Chatbox'
             }
@@ -63,6 +64,10 @@ const Texts = [
             section1:'username',
             section2:'password',
             section3:'your email'
+        },
+        brand: {
+            rightContext:'this is a new design of a Web Application',
+            rightSubcontex:'this is about xoxo, a new design web application which is useful for comminucating to other people around the world; and there is some features on it to feel modern and comfortable either and so, enjoy it alot and we are here to answer'
         }
     }
 ];
