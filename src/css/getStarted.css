@@ -1,0 +1,38 @@
+#GetStarted {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    column-gap: 3rem;
+    margin: 4vh 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--color-secondary);
+    padding: 1.2rem 1.4rem;
+}
+
+.left-getstarted {
+    margin: 0 2rem;
+}
+
+.left-getstarted-context {
+    font-family: var(--font-header);
+    color: var(--signin-context);
+    word-spacing: .1rem;
+    line-height: 2rem;
+}
+
+#GetStarted-btn {
+    padding: .9rem;
+    border-radius: 10px;
+    font-family: var(--font-header);
+    font-size: 1.3rem;
+    background: var(--header-gradient-background);
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: var(--navbar-transition);
+    letter-spacing: .15rem;
+    border: none;
+}
+
+#GetStarted-btn:hover {
+    scale: 1.05;
+}

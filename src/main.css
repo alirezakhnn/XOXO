@@ -45,6 +45,7 @@ html {
     --color-secondary: rgb(31, 8, 163);
     --color-header-title: #7bbade;
     --signin-context: #A7C2D4;
+    --button-hover: rgb(26, 6, 137);
     --navbar-transition: .3s ease-in-out;
 }
 

@@ -1,7 +1,5 @@
 import '../css/videoHandling.css';
 import { Tv, Chat, Space, XOXO_com } from '../videos';
-import { useEffect, useState, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
 
 const TV = () => (
     <video id="tv" controls>
@@ -24,13 +22,15 @@ export const SpaceVideo = ({ id }) => {
     return (
         <video id={id} controls>
             <source src={Space} type="video/mp4" />
+            Your browser does not support the video tag.
         </video >
     );
 };
 
 export const ContactUsVideo = () => (
-    <video id="contactUsVideo" controls ref={target}>
+    <video id="contactUsVideo" controls >
         <source src={XOXO_com} type="video/mp4" />
+        your browser does not support the video tag.
     </video>
 );
 

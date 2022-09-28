@@ -1,6 +1,10 @@
 import {xoxoIntro} from './assets';
 import {Tv} from './videos';
 
+// export const Br = () => (
+//     <h2 className="left-header-title">A Chatbox <br /> for instant <br /> messages <br /> or something <br /> like that</h2>
+// );
+
 const Texts = [
     {
         logo:'XOXO',
@@ -10,10 +14,7 @@ const Texts = [
             second:'Contacts',
             third:'Setting'
         },
-        header: {
-            left: {
-                title:'x'
-            },
+        header:{
             right: {
                 above:'Google Fonts is a library of 1,451 open source font families and APIs for convenient use via CSS and Android.The library also has delightful and beautifully crafted icons for common actions and items.Download them for use in your digital products for Android, iOS, and web.',
                 below:'Google Fonts is a library of 1,451 open source font families and APIs for convenient use via CSS and Android.',
@@ -65,9 +66,37 @@ const Texts = [
             section2:'password',
             section3:'your email'
         },
+        getStarted: {
+            left: {
+                context:'Get start now to prevent missing new features of xoxo and leave old chatboxes method behind, far away; so click on the button and start your journey we promise your it is will be very exciting,Get start now to prevent missing new features of xoxo and leave old chatboxes method behind, far away!'
+            }
+        },
         brand: {
             rightContext:'this is a new design of a Web Application',
             rightSubcontex:'this is about xoxo, a new design web application which is useful for comminucating to other people around the world; and there is some features on it to feel modern and comfortable either and so, enjoy it alot and we are here to answer'
+        },
+        listComp: {
+            first: {
+                title:'Features',
+                context:'there is some interesting features about xoxo, don not miss that and start your journey soon'
+            },
+            second: {
+                title:'Source',
+                context:'xoxo is open source web application so you can see our source on github right now to make sure we save our users privacy and security'
+            },
+            third: {
+                title:'More Info',
+                context:'get more info in github and our contact ways, we are always herer to response to your questions'
+            },
+            forth: {
+                title:'Contact Us',
+                context:'contact us ins telegram instagram and specially github to be up to date of xoxo new features'
+            }
+        },
+        contactus: {
+            below: {
+                context:'Contact us in xoxo.com and keep up to date with our schadules about xoxo and feel modern'
+            }
         }
     }
 ];

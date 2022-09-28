@@ -11,5 +11,5 @@
 }
 
 #signup:hover {
-    background: rgb(26, 6, 137);
+    background: var(--button-hover);
 }

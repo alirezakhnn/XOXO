@@ -1,0 +1,31 @@
+#ContactUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 6vh 2rem;
+    row-gap: 3rem;
+}
+
+.above-contactus {
+    display: grid;
+    place-items: center;
+}
+
+#contactUsVideo {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-header-title);
+}
+
+.below-contactus-context {
+    font-size: 1.6rem;
+    font-family: var(--font-logo);
+    color: var(--color-header-title);
+    text-shadow: 0 0 30px var(--color-secondary);
+    padding: 1.2rem;
+    letter-spacing: .1rem;
+    line-height: 2.3rem;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+}

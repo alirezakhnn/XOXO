@@ -1,0 +1,45 @@
+#Lists {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 3rem;
+    margin: 6vh 2rem;
+    background: var(--header-gradient-background);
+    padding: 3rem;
+    border-radius: 10px;
+    width: 80%;
+    justify-self: center;
+}
+
+.first-list,
+.second-list,
+.third-list,
+.forth-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.first-list-title,
+.second-list-title,
+.third-list-title,
+.forth-list-title {
+    font-family: var(--font-header);
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    border-bottom: 5px solid var(--color-header-title);
+}
+
+.first-list-context,
+.second-list-context,
+.third-list-context,
+.forth-list-context {
+    font-size: 1.1rem;
+    font-family: var(--font-header);
+    letter-spacing: .1rem;
+    color: var(--color-header-title);
+    justify-self: flex-end;
+    max-width: 400px;
+    line-height: 2rem;
+}
