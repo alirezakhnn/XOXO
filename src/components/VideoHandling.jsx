@@ -17,10 +17,10 @@ export const ChatVideo = ({ id }) => {
     );
 };
 
-export const SpaceVideo = ({ id }) => {
 
+export const SpaceVideo = ({ id }) => {
     return (
-        <video id={id} controls>
+        <video id={id} >
             <source src={Space} type="video/mp4" />
             Your browser does not support the video tag.
         </video >

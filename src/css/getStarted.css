@@ -36,3 +36,28 @@
 #GetStarted-btn:hover {
     scale: 1.05;
 }
+
+@media screen and (max-width:1500px) {
+    #GetStarted {
+        max-width: 800px;
+        margin-left: 15rem;
+    }
+
+    .left-getstarted-context {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #GetStarted {
+        grid-template-columns: 1fr;
+        place-items: center;
+        row-gap: 2rem;
+        margin-left: 15rem;
+    }
+
+    .left-getstarted-context {
+        min-width: 500px;
+        max-width: 600px;
+    }
+}

@@ -30,3 +30,16 @@
     border-radius: 10px;
     max-width: 500px;
 }
+
+@media screen and (max-width:1500px) {
+    #brand {
+        grid-template-columns: 1fr;
+        place-items: center;
+        row-gap: 4rem;
+        margin-left: 10rem;
+    }
+
+    .brand-left-content {
+        max-width: 900px;
+    }
+}

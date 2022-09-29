@@ -43,3 +43,27 @@
     max-width: 400px;
     line-height: 2rem;
 }
+
+@media screen and (max-width:1210px) {
+    #Lists {
+        grid-template-columns: 200px 1fr;
+        place-items: center;
+        row-gap: 3rem;
+        margin-left: 15rem;
+        max-height: 700px;
+    }
+
+    .first-list,
+    .second-list,
+    .third-list,
+    .forth-list {
+        display: grid;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #Lists {
+        grid-template-columns: 1fr;
+        max-height: 900px;
+    }
+}

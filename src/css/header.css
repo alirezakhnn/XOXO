@@ -69,8 +69,8 @@
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
-        margin-top: 6rem;
-        margin-left: 5rem;
+        margin-top: 8rem;
+        margin-left: 15rem;
     }
 
     .right-header-first-context,
@@ -83,18 +83,19 @@
     #header .left-header-title {
         color: #fff;
         text-shadow: 0 0 55px var(--color-secondary);
-        font-size: 6rem;
+        font-size: 4rem;
         margin: 4rem;
     }
 
     .left-header-context {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .right-header-first-context,
     .right-header-second-context {
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 2.5rem;
+        margin: 0 3rem;
     }
 }
 

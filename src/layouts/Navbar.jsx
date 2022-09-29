@@ -8,6 +8,16 @@ import Texts from '../texts';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const [stickedNav, setStickedNav] = useState(false);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100 && window.innerWidth >= 1250) {
+            setStickedNav(true);
+        } else {
+            setStickedNav(false);
+        }
+    })
+
     return (
         <Fragment>
             <div className="hamburger-menu">
@@ -27,7 +37,7 @@ const Navbar = () => {
                     <h3 id="username">{Me.username}</h3>
                 </div>
             </div>
-            <section id="navbar">
+            <section className={stickedNav ? 'colored-nav' : 'navbar'}>
                 <div className="left-navbar">
                     <div className="logo">
                         <h1><Link id={Texts[0].id} to="/">{Texts[0].logo}</Link></h1>

@@ -2,7 +2,7 @@
     display: none;
 }
 
-#navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -10,6 +10,46 @@
     padding: 2vh 5vw;
     width: 90rem;
     border-radius: 10px;
+    text-shadow: 3px 3px 30px var(--color-secondary);
+}
+
+.colored-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2vh 5vw;
+    width: 90%;
+    margin: 0;
+    border-radius: 10px;
+    background: linear-gradient(220deg, rgba(16, 55, 175, .6) 40%, rgba(61, 19, 209, .8) 60%);
+    position: fixed;
+    top: .4rem;
+    left: 4rem;
+    right: 1rem;
+    animation: colored-nav-anim 900ms linear;
+    z-index: 100;
+}
+
+@keyframes colored-nav-anim {
+    10% {
+        top: 3rem;
+    }
+
+    30% {
+        top: 2rem;
+    }
+
+    60% {
+        top: 1rem;
+    }
+
+    80% {
+        top: .5rem;
+    }
+
+    100% {
+        top: .4rem;
+    }
 }
 
 .right-navbar {
@@ -75,14 +115,15 @@
 }
 
 @media screen and (max-width:1500px) {
-    #navbar {
+    .navbar {
         width: 55rem;
+        margin-left: 15rem;
     }
 }
 
-@media screen and (max-width:1500px) {
-    #navbar {
-        margin-left: 15rem;
+@media screen and (max-width:1250px) {
+    .colored-nav {
+        display: none;
     }
 }
 
@@ -90,17 +131,15 @@
     .hamburger-menu {
         display: grid;
         position: absolute;
-        right: 5rem;
-        top: 2.5rem;
-        right: -2rem;
-
-
+        right: 1rem;
+        top: 2rem;
+        right: 2rem;
     }
 
-    #navbar {
+    .navbar {
         position: absolute;
         right: 2.5rem;
-        top: 4rem;
+        top: 6rem;
         display: none;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -145,7 +184,7 @@
         display: flex;
     }
 
-    .mobile-navbar-appear #navbar {
+    .mobile-navbar-appear .navbar {
         display: grid;
 
     }
@@ -153,33 +192,31 @@
 
 @media screen and (max-width:800px) {
     .hamburger-menu {
-        right: -8rem;
+        right: 3rem;
     }
 
-    #navbar {
-        width: 15rem;
-        top: 6rem;
-        right: -8rem;
+    .navbar {
+        right: 1rem;
     }
 }
 
 @media screen and (max-width:700px) {
     .hamburger-menu {
-        right: -15rem;
+        right: -3rem;
     }
 
-    #navbar {
-        right: -15rem;
+    .navbar {
+        width: -1rem;
     }
 }
 
 @media screen and (max-width:600px) {
     .hamburger-menu {
-        right: -20rem;
+        right: -15rem;
     }
 
-    #navbar {
-        right: -19rem;
+    .navbar {
+        right: -12rem;
     }
 
     .mobile-left-navbar .profile {
@@ -189,20 +226,30 @@
 
 @media screen and (max-width:500px) {
     .hamburger-menu {
-        right: -25rem;
+        right: -17rem;
     }
 
-    #navbar {
-        right: -25rem;
+    .navbar {
+        right: -14rem;
     }
 }
 
 @media screen and (max-width:410px) {
     .hamburger-menu {
-        right: -30rem;
+        right: -23rem;
     }
 
-    #navbar {
-        right: -30rem;
+    .navbar {
+        right: -21rem;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .hamburger-menu {
+        right: -25rem;
+    }
+
+    .navbar {
+        right: -23rem;
     }
 }

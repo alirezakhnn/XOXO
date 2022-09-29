@@ -29,3 +29,13 @@
     max-width: 500px;
     text-align: center;
 }
+
+@media screen and (max-width:900px) {
+    #ContactUs {
+        margin-left: 12rem;
+    }
+
+    #contactUsVideo {
+        width: 70%;
+    }
+}
