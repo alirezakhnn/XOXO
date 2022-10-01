@@ -1,5 +1,5 @@
 
-import { Navbar, Header, Source, Intro, GetStarted, Brand, Lists, ContactUs } from './layouts';
+import { Navbar, Header, Source, Intro, GetStarted, Brand, Lists, ContactUs, Footer } from './layouts';
 
 const App = () => {
     return (
@@ -12,6 +12,7 @@ const App = () => {
             <Brand />
             <Lists />
             <ContactUs />
+            <Footer />
         </div>
     );
 }

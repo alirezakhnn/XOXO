@@ -6,6 +6,7 @@ import GetStarted from './GetStarted';
 import Brand from './Brand';
 import Lists from './Lists';
 import ContactUs from './ContactUs';
+import Footer from './Footer';
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     GetStarted,
     Brand,
     Lists,
-    ContactUs
+    ContactUs,
+    Footer
 }
