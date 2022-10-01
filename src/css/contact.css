@@ -112,10 +112,14 @@
     background: var(--header-gradient-background);
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1500px) {
     #contacts {
         grid-template-columns: 1fr;
         place-items: center;
+    }
+
+    .center-contacts-content {
+        margin-left: 6rem;
     }
 }
 
@@ -125,16 +129,16 @@
     }
 
     .user-contact-username {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .user-subtext {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     #add-contact {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
     }
 
     #frier,
@@ -142,31 +146,31 @@
     #profile_nina,
     #lagertha,
     #robert {
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
     }
 }
 
 @media screen and (max-width:450px) {
     #contacts-user {
-        width: 15rem;
+        width: 8rem;
     }
 
     #contacts-user-h1 {
-        font-size: 4.5rem;
-    }
-
-    .user-contact-username {
         font-size: 3rem;
     }
 
-    .user-subtext {
+    .user-contact-username {
         font-size: 2rem;
     }
 
+    .user-subtext {
+        font-size: 1.4rem;
+    }
+
     #add-contact {
-        width: 75px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
     }
 
     #frier,

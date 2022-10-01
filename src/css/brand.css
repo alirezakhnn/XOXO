@@ -36,7 +36,7 @@
         grid-template-columns: 1fr;
         place-items: center;
         row-gap: 4rem;
-        margin-left: 10rem;
+        margin-left: 5rem;
     }
 
     .brand-left-content {

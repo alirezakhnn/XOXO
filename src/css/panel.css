@@ -87,7 +87,7 @@
     padding: .3rem;
     cursor: pointer;
     transition: var(--navbar-transition);
-    position: fixed;
+    position: sticky;
     bottom: 3rem;
     right: 4rem;
 }
@@ -141,54 +141,43 @@
     justify-content: end;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1500px) {
     #Panel {
-        margin-left: 2rem;
+        margin-left: 10rem;
     }
+}
 
-    .left-panel {
-        width: 30%;
-    }
-
+@media screen and (max-width:900px) {
     .center-panel {
         width: 70%;
-        margin-left: 10rem;
+        margin-left: 5rem;
     }
 
     .center-panel-section1 label,
     .center-panel-section2 label,
     .center-panel-section3 label {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .email-panel,
     .password-panel {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     #delete {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
-@media screen and (max-width:770px) {
-    #Panel {
-        margin: 0;
-    }
-
+@media screen and (max-width:810px) {
     .left-panel {
         width: 100%;
         margin: 2rem 2rem 3rem 0;
     }
 
     .center-panel {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:700px) {
-    #settings {
-        top: 2rem;
+        width: 90%;
+        margin: 4vh 2rem;
     }
 }
 
@@ -211,5 +200,11 @@
 
     #delete {
         font-size: 2.5rem;
+    }
+
+    #settings {
+        width: 80px;
+        height: 80px;
+        margin-right: 4rem;
     }
 }

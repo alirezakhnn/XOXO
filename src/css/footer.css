@@ -35,7 +35,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 4vh;
 }
 
@@ -68,9 +68,17 @@
 }
 
 @media screen and (max-width:1500px) {
+    #footer {
+        width: 115%;
+    }
+
     .curve-border {
         width: 115%;
         place-items: start;
+    }
+
+    .footer-svgs {
+        margin-right: 4vw;
     }
 }
 
@@ -80,8 +88,28 @@
     }
 
     .footer-links-list {
-        grid-template-columns: repeat(4, 1fr);
-        margin-left: 6rem;
-        margin-bottom: 3rem;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 10rem 1rem 4rem 6rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer-links-list {
+        margin-left: 12rem;
+    }
+
+    .footer-links-list a {
+        font-size: 1.5rem;
+    }
+
+    .footer-svgs {
+        justify-self: center;
+        gap: 2rem;
+        margin-left: 10rem;
+    }
+
+    .footer-svgs a svg {
+        width: 40px;
+        height: 40px;
     }
 }

@@ -39,3 +39,15 @@
         width: 70%;
     }
 }
+
+@media screen and (max-width:600px) {
+    .below-contactus-context {
+        font-size: 2rem;
+        color: var(--color-primary);
+    }
+
+    #contactUsVideo {
+        width: 90%;
+        margin-left: 4rem;
+    }
+}

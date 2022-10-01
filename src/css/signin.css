@@ -158,32 +158,32 @@
     #SignIn {
         grid-template-columns: 1fr;
         place-items: center;
+        margin-left: 7rem;
     }
 
     #signin-user {
-        width: 90%;
+        width: 50%;
     }
 
     #profile_nina {
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     #email,
     #password {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #signin-google {
-        font-size: 3rem;
-        padding: 2rem 2.5rem;
+        font-size: 2rem;
     }
 
     #submit-signin {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     #createAccount {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #meteorite {
@@ -197,10 +197,27 @@
     .right-signin {
         justify-self: center;
         margin: 0 2rem;
-        row-gap: 5rem;
+        row-gap: 2rem;
     }
 
     #profile_nina {
         color: #fff;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #profile_nina {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    #profile_nina {
+        margin-left: 4rem;
+    }
+
+    #SignIn {
+        margin-left: 5rem;
     }
 }

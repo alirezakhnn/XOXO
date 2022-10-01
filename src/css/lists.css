@@ -67,3 +67,9 @@
         max-height: 900px;
     }
 }
+
+@media screen and (max-width:600px) {
+    #Lists {
+        margin-left: 20rem;
+    }
+}
