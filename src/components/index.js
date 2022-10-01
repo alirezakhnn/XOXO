@@ -3,7 +3,7 @@ import Signin from './Signin';
 import Signup from './Signup';
 import Panel from './Panel';
 import Contacts from './Contact';
-import VideoHandling from './VideoHandling';
+import useVideoAutoPlayback from './useVideoAutoPlayback';
 
 export {
     Input,
@@ -11,5 +11,5 @@ export {
     Signup,
     Panel,
     Contacts,
-    VideoHandling
+    useVideoAutoPlayback
 }

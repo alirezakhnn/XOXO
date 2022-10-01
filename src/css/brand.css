@@ -18,6 +18,14 @@
     text-shadow: 0 0 40px var(--color-secondary);
 }
 
+#tv {
+    width: 60%;
+    opacity: .75;
+    border-radius: 50%;
+    margin: 2vh 2rem;
+    box-shadow: 0 0 20px var(--color-header-title);
+}
+
 .brand-right-content-subcontext {
     margin: 2vh 0;
     font-family: var(--font-header);
@@ -41,5 +49,16 @@
 
     .brand-left-content {
         max-width: 900px;
+    }
+
+    #tv {
+        width: 50%;
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #tv {
+        margin-left: 10rem;
     }
 }
