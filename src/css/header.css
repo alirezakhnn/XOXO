@@ -15,7 +15,20 @@
     font-family: var(--font-header);
     font-size: 4rem;
     margin: 2rem 2rem .5rem 4rem;
-    text-shadow: 0 0 40px var(--color-secondary);
+    max-width: 450px;
+    text-shadow: 0 0 50px var(--color-secondary);
+    background: rgb(0,250,255);
+    background: -moz-linear-gradient(223deg, rgb(76, 195, 197) 0%, rgba(31,115,227,1) 58%);
+    background: -webkit-linear-gradient(223deg, rgba(0,250,255,1) 0%, rgba(31,115,227,1) 58%);
+    background: linear-gradient(223deg, rgb(1, 251, 255) 10%, rgb(0, 110, 255) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00faff",endColorstr="#1f73e3",GradientType=1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
 }
 
 .left-header-context {
@@ -23,8 +36,16 @@
     font-family: var(--font-logo);
     margin-left: 5.5rem;
     margin-bottom: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-shadow: 0 0 100px var(--color-secondary);
+    background: rgb(17,78,140);
+    background: -moz-linear-gradient(302deg, rgba(17,78,140,1) 0%, rgba(130,0,255,1) 100%);
+    background: -webkit-linear-gradient(302deg, rgba(17,78,140,1) 0%, rgba(130,0,255,1) 100%);
+    background: linear-gradient(302deg, rgba(17,78,140,1) 0%, rgba(130,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#114e8c",endColorstr="#8200ff",GradientType=1);  
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 #header .right-header {

@@ -54,6 +54,16 @@
     font-size: 2.2rem;
     text-shadow: 0 0 60px var(--color-secondary);
     z-index: 1;
+    background: rgb(0,250,255);
+    background: -moz-linear-gradient(223deg, rgb(76, 195, 197) 0%, rgba(31,115,227,1) 58%);
+    background: -webkit-linear-gradient(223deg, rgba(0,250,255,1) 0%, rgba(31,115,227,1) 58%);
+    background: linear-gradient(223deg, rgb(1, 251, 255) 10%, rgb(0, 110, 255) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00faff",endColorstr="#1f73e3",GradientType=1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
 }
 
 @media screen and (max-width:1500px) {
@@ -62,8 +72,11 @@
     }
 
     #chatbox-intro {
-        width: 40%;
-        margin: 2rem -4rem 1rem 2rem;
+        width: 70%;
+        margin: 2rem 13rem 1rem 2rem;
+    }
+    .right-content-intro-context {
+        margin-right: 12rem;
     }
 }
 
@@ -79,7 +92,8 @@
     }
 
     #chatbox-intro {
-        width: 95%;
+        width: 50%;
+        margin: 2rem -3rem 1rem 2rem;
     }
 
     #intro-subtitle {
@@ -92,8 +106,8 @@
 }
 
 @media screen and (max-width:1250px) {
-    #chatbox-intro {
-        max-width: 60%;
+    .right-content-intro-context {
+        margin-right: 5rem;
     }
 }
 
@@ -105,10 +119,33 @@
     #intro-subtitle {
         font-size: 1rem;
         line-height: 2.5rem;
-        margin-left: 15rem;
+        margin-left: 10rem;
     }
 
     .right-content-intro-context {
         font-size: 2rem;
+        margin-left:15rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:440px) {
+    #chatbox-intro {
+        width:45%;
+        margin-right: 6rem;
+    }
+    .right-content-intro-context {
+        margin-left:8rem;
+        max-width:40%;
+    }
+    #intro-subtitle {
+        max-width: 350px;
+        margin-left:4rem;
+    }
+}
+
+@media screen and (max-width:370px) {
+    #intro-subtitle {
+        margin-left:0;
     }
 }

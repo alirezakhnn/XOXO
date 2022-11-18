@@ -11,7 +11,7 @@ const Navbar = () => {
     const [stickedNav, setStickedNav] = useState(false);
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 100 && window.innerWidth >= 1250) {
+        if (window.scrollY >= 5 && window.innerWidth >= 1250) {
             setStickedNav(true);
         } else {
             setStickedNav(false);
@@ -23,8 +23,8 @@ const Navbar = () => {
             <div className="hamburger-menu">
                 <img id="hamburger" src={toggle ? close : menu} alt="hamburger"
                     onClick={() => {
+                        toggle ? document.body.classList.remove('mobile-navbar-appear') : document.body.classList.toggle('mobile-navbar-appear');
                         setToggle(prev => !prev);
-                        document.body.classList.toggle('mobile-navbar-appear');
                     }}
                 />
             </div>

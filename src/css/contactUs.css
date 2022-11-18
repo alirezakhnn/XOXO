@@ -28,6 +28,16 @@
     border-radius: 10px;
     max-width: 500px;
     text-align: center;
+    background: rgb(0,250,255);
+    background: -moz-linear-gradient(223deg, rgb(76, 195, 197) 0%, rgba(31,115,227,1) 58%);
+    background: -webkit-linear-gradient(223deg, rgba(0,250,255,1) 0%, rgba(31,115,227,1) 58%);
+    background: linear-gradient(223deg, rgb(1, 251, 255) 10%, rgb(0, 110, 255) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00faff",endColorstr="#1f73e3",GradientType=1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
 }
 
 @media screen and (max-width:900px) {
@@ -38,6 +48,9 @@
     #contactUsVideo {
         width: 70%;
     }
+    .below-contactus-context {
+        margin-right:4rem;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -47,7 +60,45 @@
     }
 
     #contactUsVideo {
-        width: 90%;
-        margin-left: 4rem;
+        width: 50%;
+        margin-right: 7rem;
+    }
+    .below-contactus-context {
+        margin-right:7rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #contactUsVideo, .below-contactus-context {
+        margin-right:9rem;
+    }
+}
+@media screen and (max-width:500px) {
+    #contactUsVideo, .below-contactus-context {
+        margin-right:13rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .below-contactus-context {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width:410px) {
+    #contactUsVideo {
+        margin-right:17rem;
+    }
+}
+@media screen and (max-width:378px) {
+    #contactUsVideo {
+        width:45%;
+        margin-right:20rem;
+    }
+    .below-contactus-context {
+        margin-right: 20rem;
+    }
+}
+@media screen and (max-width:350px) {
+    #contactUsVideo {
+        margin-right: 22rem;
     }
 }

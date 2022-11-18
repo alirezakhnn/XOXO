@@ -61,15 +61,44 @@
     }
 }
 
+@media screen and (max-width:1080px) {
+    #Lists {
+        margin-left: 10rem;
+    }
+}
+
 @media screen and (max-width:900px) {
     #Lists {
         grid-template-columns: 1fr;
         max-height: 900px;
     }
 }
+@media screen and (max-width:550px) {
+    #Lists { 
+        max-width:400px;
+        max-height: fit-content;
+        margin-left:4rem;
+    }
+}
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:490px) {
     #Lists {
-        margin-left: 20rem;
+        margin-left:0;
+    }
+}
+@media screen and (max-width:458px) {
+    #Lists {
+        margin-left:-3rem;
+    }
+}
+
+@media screen and (max-width:395px) {
+    #Lists {
+        margin-left:-5rem;
+    }
+}
+@media screen and (max-width:375px) {
+    #Lists {
+        margin-left:-8rem;
     }
 }

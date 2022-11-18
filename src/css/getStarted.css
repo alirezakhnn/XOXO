@@ -53,11 +53,31 @@
         grid-template-columns: 1fr;
         place-items: center;
         row-gap: 2rem;
-        margin-left: 15rem;
     }
 
     .left-getstarted-context {
-        min-width: 500px;
         max-width: 600px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    #GetStarted {
+        margin-left: 13rem;
+    }
+}
+@media screen and (max-width:520px) {
+    #GetStarted {
+        margin-left:10rem;
+    }
+    .left-getstarted-context {
+        min-width:fit-content;
+    }
+}
+@media screen and (max-width:420px) {
+    #GetStarted {
+        margin-left:5rem;
+    }
+    .left-getstarted {
+        max-width:250px;
     }
 }

@@ -69,11 +69,11 @@
 
 @media screen and (max-width:1500px) {
     #footer {
-        width: 115%;
+        width: 100vw;
     }
 
     .curve-border {
-        width: 115%;
+        width: 100vw;
         place-items: start;
     }
 
@@ -83,6 +83,12 @@
 }
 
 @media screen and (max-width:1240px) {
+    #footer {
+        width:115vw;
+    }
+    .curve-border {
+        width:115vw;
+    }
     .logo {
         display: none;
     }
@@ -91,15 +97,33 @@
         grid-template-columns: repeat(6, 1fr);
         margin: 10rem 1rem 4rem 6rem;
     }
+    .footer-svgs {
+        margin-right: 15rem;;
+    }
 }
 
+@media screen and (max-width:1070px) {
+    #footer, .curve-border {
+        width:120vw;
+    }
+}
+@media screen and (max-width:980px) {
+    #footer, .curve-border {
+        width:125vw;
+    }
+}
+@media screen and (max-width:760px) {
+    #footer, .curve-border {
+        width:130vw;
+    }
+}
 @media screen and (max-width:700px) {
     .footer-links-list {
         margin-left: 12rem;
     }
 
     .footer-links-list a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .footer-svgs {
@@ -111,5 +135,53 @@
     .footer-svgs a svg {
         width: 40px;
         height: 40px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #footer, .curve-border {
+        width:135vw;
+    }
+    .footer-links-list {
+        margin: 10rem 15rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .footer-links-list {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 12rem 17rem;
+    }
+}
+
+@media screen and (max-width:520px) {
+    #footer, .curve-border {
+        width:140vw;
+    }
+    .footer-links-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:480px) {
+    #footer, .curve-border {
+        width:145vw;
+    }
+}
+@media screen and (max-width:420px) {
+    #footer, .curve-border {
+        width:150vw;
+    }
+}
+@media screen and (max-width:420px) {
+    #footer, .curve-border {
+        width:155vw;
+    }
+    .footer-links-list {
+        margin:12rem 14rem;
+    }
+}
+@media screen and (max-width:380px) {
+    #footer, .curve-border {
+        width:160vw;
     }
 }

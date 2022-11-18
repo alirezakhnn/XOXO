@@ -4,6 +4,7 @@ import Signup from './Signup';
 import Panel from './Panel';
 import Contacts from './Contact';
 import useVideoAutoPlayback from './useVideoAutoPlayback';
+import SoundHandler from './SoundHandler';
 
 export {
     Input,
@@ -11,5 +12,6 @@ export {
     Signup,
     Panel,
     Contacts,
-    useVideoAutoPlayback
+    useVideoAutoPlayback,
+    SoundHandler
 }
